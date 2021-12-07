@@ -1,0 +1,51 @@
+<html lang="en">
+	<head>
+		<meta http-equiv="refresh" content="300" >
+		<meta charset="utf-8">
+		<meta name="author" content=" Jorge Garcia Otero">
+		<meta name="description" content="Vision">
+		<meta name="keywords" content="Foto Red">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1 maximum-scale=1.0, minimum-scale=1.0">
+
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<!-- Bootstrap core CSS -->
+		<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+		<link href="{{ url_for('static', filename='css/login.css') }}" rel="stylesheet">
+		<link href="{{ url_for('static', filename='css/jquery.dataTables.min.css')}}" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark indigo">
+				<a class="navbar-brand" href="/index"><img src="{{url_for('static', filename='/images/img.png')}}" class="responsive"/>MY WEB</a>
+			</nav>
+
+		</header>
+
+		<!-- Contenido principal-->
+		<main class="main container-fluid">
+			<div class="row row_aviso">
+				<div class="col col_aviso">
+					<h4>Advertencia</h4>
+					<p>El acceso o uso no autorizado a este sistema propiedad ....</p>
+					<h4>Warning</h4>
+					<p>
+					Unauthorized access or use of this system, which is property of ...</p>					
+				</div>
+			</div>
+			<div class="row row_login">
+				<div class="col col_login">
+					<a href="?sso" class="btn btn-primary btn-lg">Login</a> 
+				</div>
+			</div>
+		</main>
+
+
+		<script src="{{ url_for('static', filename='jquery-3.2.1.min.js') }}"> </script>
+		<script src="{{ url_for('static', filename='popper.min.js') }}"> </script>
+		<script src="{{ url_for('static', filename='bootstrap.min.js') }}"> </script>
+	</body>
+</html>
